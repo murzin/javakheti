@@ -36,3 +36,10 @@ h1{font-size:clamp(43px,4.1vw,76px);line-height:1.02;letter-spacing:-1.8px}
 
 .sound-controls>#sound.audio-awaiting{border:1px solid #d3dcac80;border-radius:5px;background:#d3dcac18;padding:7px 10px;color:#e5edcd}
 @media(max-width:700px){.sound-controls>#sound.audio-awaiting{padding:6px;font-size:8px}.sound-controls{gap:8px}}
+/* Keep all twenty photographs reachable without squeezing their thumbnails. */
+#chapters{position:relative;flex:1 1 0;min-width:0;max-width:600px;overflow-x:auto;overflow-y:hidden;padding:9px 2px 8px;scrollbar-width:thin;scrollbar-color:#a9b88b60 transparent;overscroll-behavior-x:contain;touch-action:pan-x}
+#chapters button{flex:0 0 42px;width:42px;height:32px}
+#chapters::-webkit-scrollbar{height:3px}
+#chapters::-webkit-scrollbar-thumb{background:#a9b88b60;border-radius:2px}
+@media(max-width:1100px){#chapters button{flex-basis:34px;width:34px;height:28px}}
+@media(max-width:700px){#chapters{position:absolute;bottom:16px;left:0;max-width:none;width:100%;justify-content:flex-start;gap:7px;padding:8px 1px 6px}#chapters button{flex:0 0 38px;width:38px;height:28px}}
